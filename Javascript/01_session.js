@@ -63,6 +63,7 @@ function reverseString(str) {
 }
 
 // 06 Finding min value in the Arr
+
 function findMin(arr) {
   let min = arr[0];
   for (let i = 0; i < arr.length; i++) {
@@ -72,4 +73,16 @@ function findMin(arr) {
   }
   return min;
 }
-console.log(findMin([39, 32943, 234234, 344, 5, 33, 3]));
+
+
+function findMin(arr) {
+  let min = arr[0];
+  for (const i of arr) {
+    console.log(i);
+    if (i < min) {
+      min = i;
+    }
+  }
+  return min;
+}
+
