@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Practice Js</title>
+  </head>
+  <body class="bg-black select-none">
+    <nav
+      class="flex justify-between items-center border-b border-gray-200/20 bg-black text-white w-full px-4 lg:px-6 py-2.5"
+    >
+      <img
+        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        alt="Google Logo"
+        class="h-10 object-contain"
+      />
+      <button
+        id="openMobileMenu"
+        class="lg:hidden bg-green-500 text-white px-6 py-1 rounded-md uppercase font-bold"
+      >
+        Open
+      </button>
+      <button
+        id="closeMobileMenu"
+        class="bg-red-500 text-white px-6 py-1 rounded-md uppercase font-bold hidden lg:hidden"
+      >
+        Close
+      </button>
+      <ul
+        id="mobileMenu"
+        class="lg:flex lg:divide-y-0 items-center gap-4 absolute lg:static lg:top-0 lg:left-0 -top-full lg:z-0 left-0 w-full lg:w-auto lg:bg-transparent px-6 lg:py-0 lg:px-0 cursor-pointer divide-y divide-gray-200/20 py-4 bg-[#1c1717] transition-all -z-10 duration-300"
+      >
+        <li class="py-2">Home</li>
+        <li class="py-2">About</li>
+        <li class="py-2">Contact</li>
+        <li class="py-2 group relative">
+          <span
+            class="relative after:content-[''] after:w-0 after:h-0 after:border-l-[7px] after:border-l-transparent after:border-t-[7px] after:border-t-red-500 after:border-r-[7px] after:border-r-transparent after:ml-2.5 after:mb-0.5 lg:after:inline-block after:absolute after:top-2 after:right-0.5 lg:after:top-0 lg:after:right-0 lg:after:static block lg:inline-block lg:pb-0 subMenu"
+            >Services</span
+          >
+          <div
+            class="hidden lg:hidden pt-2 lg:pt-3 lg:group-hover:block lg:absolute lg:top-[41px] lg:right-0 lg:w-48 lg:z-10"
+          >
+            <ul
+              class="lg:group-hover:flex lg:group-hover:flex-col bg-black border border-gray-200/20 text-sm px-4 py-2 lg:mt-0 divide-y divide-gray-200/20"
+            >
+              <li class="py-2">Web Development</li>
+              <li class="py-2">Web Development</li>
+              <li class="py-2">Web Development</li>
+            </ul>
+          </div>
+        </li>
+        <li class="py-2 group relative">
+          <span
+            class="relative after:content-[''] after:w-0 after:h-0 after:border-l-[7px] after:border-l-transparent after:border-t-[7px] after:border-t-red-500 after:border-r-[7px] after:border-r-transparent after:ml-2.5 after:mb-0.5 lg:after:inline-block after:absolute after:top-2 after:right-0.5 lg:after:top-0 lg:after:right-0 lg:after:static block lg:inline-block lg:pb-0 subMenu"
+            >Products</span
+          >
+          <div
+            class="hidden lg:hidden pt-2 lg:pt-3 lg:group-hover:block lg:absolute lg:top-[41px] lg:right-0 lg:w-48 lg:z-10"
+          >
+            <ul
+              class="lg:group-hover:flex lg:group-hover:flex-col bg-black border border-gray-200/20 text-sm px-4 py-2 lg:mt-0 divide-y divide-gray-200/20"
+            >
+              <li class="py-2">Web Development</li>
+              <li class="py-2">Web Development</li>
+              <li class="py-2">Web Development</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <script src="/Javascript/05_toggleMenu.js"></script>
+  </body>
+</html>
